@@ -73,18 +73,49 @@
 
 // let point:Point = new Point();  // means  
 
+// class Point{
+//     x:number;
+//     private y:number;
+//     constructor(x?:number,y?:number){
+//         this.x=x;
+//         this.y=y;
+//     }
+//     draw(){
+//         console.log('X: '+this.x+' Y: '+this.y);
+//     }
+   
+// }
+
+// // Constructor proprty
+// class Point{
+//     constructor(private _x?:number, private _y?:number){
+//     }
+//     draw(){
+//         console.log('X: '+this._x+' Y: '+this._y);
+//     }
+//     get x()
+//     {
+//         return this._x;
+//     }
+//     set x(value){
+//         if(value<0)
+//             throw new Error('Value cannot be less than ZERO');
+//         this._x=value;
+//     }
+   
+// }
+// let point = new Point(1,2);
+// let x=point.x;
+// point.x=10;
+
+// point.draw();
+
+
 class Point{
-    x:number;
-    private y:number;
-    constructor(x?:number,y?:number){
-        this.x=x;
-        this.y=y;
+    constructor(private _x?:number, private _y?:number){
     }
     draw(){
-        console.log('X: '+this.x+' Y: '+this.y);
-    }
-   
+        console.log('X: '+this._x+' Y: '+this._y);
+    }   
 }
-let point = new Point();
-point.x=3;
-point.draw();
+
